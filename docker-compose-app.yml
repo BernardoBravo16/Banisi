@@ -1,0 +1,15 @@
+version: "3.5"
+ 
+services:
+  banisi-api:
+    image: bernardopersonalsoft/img-banisi-web-api
+    container_name: api-banisi
+    restart: always
+    ports:
+    - 8080:8080
+    networks:
+    - banisi
+ 
+networks:
+  banisi:
+    name: banisi-web-api
